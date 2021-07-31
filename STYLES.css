@@ -1,0 +1,257 @@
+body{
+  background-color: #f2deea ;
+  margin: 0 0 0 0;
+}
+
+h1{
+
+  color: #A239EA;
+}
+
+hr{
+  border-color: #FF94CC;
+  border-style:  dotted;
+  border-spacing: 30px ;
+  border-width: 20px 0 0 0;
+  width: 10% ;
+ }
+.logo{
+  float: left;
+}
+
+.hobby1{
+  padding-top: 300px ;
+  height: 500px ;
+
+}
+
+.hobby2{
+  float: right;
+}
+
+.hobby0{
+  margin-right: 200px ;
+  padding-left: 100px ;
+  width: 20% ;
+  float: left;
+  border-right: 100px ;
+}
+
+.hobby3{
+  height: 500px ;
+}
+
+
+.hobby4{
+height: 500px
+}
+
+
+
+.pic2{
+  margin-right: 230px ;
+  padding-left: 100px ;
+  width: 20% ;
+  float: left;
+  border-right: 100px ;
+}
+
+.pic3{
+  margin-right: 230px ;
+  padding-left: 100px ;
+  width: 20% ;
+  float: left;
+  border-right: 100px ;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #FF94CC;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #A239EA;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #5C33F6;
+  color: white;
+}
+
+.whiteline{
+  border-style: solid;
+  border-color: #A239EA ;
+  width: 100% ;
+}
+
+.bottomtxt{
+  text-align: center ;
+}
+
+.heading{
+  text-align: center;
+}
+
+.instapic{
+  margin-right: 230px ;
+  padding-left: 100px ;
+  width: 10% ;
+  float: left;
+  border-right: 100px ;
+}
+
+
+.social0{
+  margin: auto;
+  padding-top: 50px ;
+  height: 300px ;
+}
+
+.social2{
+  margin: auto;
+  height: 300px ;
+}
+
+.fbpic{
+  margin-right: 230px ;
+  padding-left: 100px ;
+  width: 10% ;
+  float: left;
+  border-right: 100px ;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+body {
+  color: slategray;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 2rem 0rem 0rem 0rem;
+  max-width: 1100px;
+}
+
+.table-cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  padding: 0.8em 1.2em;
+  overflow: hidden;
+  list-style-type: none;
+  outline: 1px solid #ddd;
+  text-align: center;
+  font-weight: 300;
+  margin: {
+    top: 1px;
+    left: 1px;
+  }
+  &:first-child {
+  	outline: 1px solid #fff;
+    background: transparent;
+  	@media only screen and (max-width : 768px) {
+			display: none;
+		}
+  }
+  &:nth-child(3) {
+    outline: 1px solid #30305b;
+  }
+  &:nth-child(-n+3) {
+  	padding: {
+  		top: 40px;
+  		bottom: 40px;
+  	}
+  }
+  > h3 {
+    font-size: 26px;
+  	margin: {
+  		top: 0;
+  		bottom: 3rem;
+  	}
+  }
+  &.cell-feature {
+	  text-align: left;
+    font-size: 18px;
+  }
+  &.plattform {
+    color: limegreen;
+    a.btn {
+      color: limegreen;
+      &:hover {
+        background-color: limegreen;
+        border-color: limegreen;
+        color: white;
+      }
+    }
+  }
+  &.enterprise {
+    background-color: #30305b;
+    color: #85bafc;
+    a.btn {
+      color: #85bafc;
+      &:hover {
+        background-color: #85bafc;
+        border-color: #85bafc;
+        color: #30305b;
+      }
+    }
+  }
+}
+
+/* Table columns
+================================== */
+.table-cell  {
+  width: calc(33.33% - 1px);
+  &.cell-feature {
+	  @media only screen and (max-width : 768px) {
+		  width: 100%;
+		  text-align: center;
+	  }
+  }
+}
+
+svg.enterprise-check path {
+  fill: #30305b !important;
+}
+
+a.btn {
+  border: 2px solid;
+  padding: .6rem .9rem .6rem .9rem;
+  font-weight: 400;
+  text: {
+    transform: uppercase;
+    decoration: none;
+  }
+  @include transition(0.2s ease-in-out);
+  @include border-radius(.3rem);
+}
